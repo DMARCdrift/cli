@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dmarcdrift"
+version = "0.0.1"
+description = "Command-line client for DMARCdrift (placeholder release)"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "DMARCdrift", email = "hello@dmarcdrift.com" }]
+
+[project.urls]
+Homepage = "https://dmarcdrift.com"
+Repository = "https://github.com/DMARCdrift/cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dmarcdrift"]
